@@ -1,8 +1,10 @@
-package com.buildrun.creditcardservice.domain;
+package com.buildrun.creditcardservice.Factory;
+
+import com.buildrun.creditcardservice.domain.Customer;
 
 public class CustomerFactory {
 
-    public static  Customer build(){
+    public static Customer build() {
         return   new Customer(
                 "Joel Langa",
                 "123.456.89",

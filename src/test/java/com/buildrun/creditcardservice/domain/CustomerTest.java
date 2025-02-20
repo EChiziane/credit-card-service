@@ -1,9 +1,11 @@
 package com.buildrun.creditcardservice.domain;
 
+import com.buildrun.creditcardservice.Factory.CustomerFactory;
 import org.junit.jupiter.api.Nested;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 class CustomerTest {
 
