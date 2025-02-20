@@ -28,9 +28,5 @@ public boolean isBasicCreditCardAvailable(){
                 customer.isScoreGreaterThan(750.0);
     }
 
-    public int getPersonalScore(){
-
-    }
-
 
 }

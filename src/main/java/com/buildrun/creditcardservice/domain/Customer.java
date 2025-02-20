@@ -20,5 +20,7 @@ public boolean isIncomeEqualOrLowerThan(Double value){return income <= value; }
     }
 
     public boolean isScoreGreaterThan(Double value){return score > value; }
+    public Double getIncome(){return income;}
+    public  Integer getScore(){return score;}
 
 }

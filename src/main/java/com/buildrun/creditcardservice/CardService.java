@@ -20,9 +20,17 @@ public class CardService {
         List<CardResponse> cards = new ArrayList<>();
 
         if(card.isPlatinumCreditCardAvailable()){
-            cards.add(new CardResponse(CreditCardType.BASIC,card.))
+            cards.add(new CardResponse(CreditCardType.PLATINUM, costumer.getIncome(),(double) costumer.getScore()));
         }
 
-        return  null;
+        if(card.isGoldCreditCardAvailable()){
+            cards.add(new CardResponse(CreditCardType.GOLD, costumer.getIncome(),(double) costumer.getScore()));
+        }
+
+        if(card.isBasicCreditCardAvailable()){
+            cards.add(new CardResponse(CreditCardType.BASIC, costumer.getIncome(),(double) costumer.getScore()));
+        }
+
+        return  new CustomerCardResponse(customerCardRequest.name(),cards);
     }
 }
